@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Carbon Footprint Awareness</title>
+</head>
+<body>
+<h1>Carbon Footprint Awareness</h1>
+
+<p>Distance travelled by car (km):</p>
+<input type="number" id="km">
+
+<button onclick="calculate()">Calculate</button>
+
+<p id="result"></p>
+
+<script>
+function calculate() {
+  let km = document.getElementById("km").value;
+  let carbon = km * 0.12;
+
+  document.getElementById("result").innerHTML =
+    "Estimated CO2 Emission: " + carbon.toFixed(2) + " kg";
+}
+</script>
+
+</body>
+</html>
